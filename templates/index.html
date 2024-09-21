@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GLIMR - A Glimpse into the Future</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo" class="logo">
+            <h1 class="title">GLIMR - A GLIMPSE INTO THE FUTURE</h1>
+            <div class="nav-buttons">
+                <button class="nav-button">Home</button>
+                <button class="nav-button">About Us</button>
+                <button class="nav-button">Meet the Team</button>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="left-box">
+            <h2>Try it Yourself!</h2>
+            <div class="upload-box">
+                <form class="upload-form" action="/" method="post" enctype="multipart/form-data">
+                    <label class="custom-file-upload">
+                        <input type="file" name="file" accept="image/*">
+                        Choose File
+                    </label>
+                    <button type="submit">Upload and Test</button>
+                </form>
+            </div>
+        </div>
+        <div class="right-box">
+            <div class="image-container">
+                {% if original_image_path %}
+                <div class="image-wrapper">
+                    <h3>Original Image</h3>
+                    <img src="{{ url_for('static', filename='uploads/' + original_image_path) }}" alt="Original Image">
+                </div>
+                {% endif %}
+                {% if annotated_image_path %}
+                <div class="image-wrapper">
+                    <h3>YOLO Model Output</h3>
+                    <img src="{{ url_for('static', filename='uploads/' + annotated_image_path) }}" alt="YOLO Model Output">
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 GLIMR - A Glimpse into the Future</p>
+    </footer>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

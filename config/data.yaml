@@ -1,0 +1,22 @@
+names:
+- energydrinkbottle
+- energydrinkcan
+- icetea
+- juice
+- milkbottle
+- softdrinkbottle
+- softdrinkcans
+- softdrinkpackage
+- waterbottle
+- waterbottlepackage
+- watergallon
+nc: 11
+roboflow:
+  license: CC BY 4.0
+  project: retail-detection-r5afb
+  url: https://universe.roboflow.com/eslsca-sq8ke/retail-detection-r5afb/dataset/10
+  version: 10
+  workspace: eslsca-sq8ke
+test: test/images
+train: train/images
+val: valid/images

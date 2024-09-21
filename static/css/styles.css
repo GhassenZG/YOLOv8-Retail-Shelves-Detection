@@ -1,0 +1,169 @@
+/* Body styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #151d58; /* Dark blue background color */
+    color: #d1c8be;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Navigation styles */
+nav {
+    width: 100%;
+    background-color: white; /* Navbar background color */
+    padding: 10px 20px;
+    border-bottom: 2px solid #151d58; /* Dark blue line under the navbar */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar .logo {
+    height: 50px; /* Adjust the logo size as needed */
+    margin-right: 20px;
+}
+
+.navbar .title {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #151d58; /* Dark blue text color */
+}
+
+.navbar .nav-buttons {
+    display: flex;
+    gap: 15px; /* Adjusted gap between buttons */
+    margin-left: auto; /* Ensure buttons are pushed to the right */
+}
+
+.navbar .nav-button {
+    background: none;
+    border: none;
+    color: #151d58;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.navbar .nav-button:hover {
+    text-decoration: underline;
+}
+
+/* Container styles */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 80vh;
+    padding: 20px;
+}
+
+/* Left box styles */
+.left-box {
+    background-color: #000323; /* New color for the left box */
+    padding: 30px;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+    flex: 1;
+    max-width: 300px;
+}
+
+h2 {
+    margin-top: 0;
+    color: #fff;
+    font-size: 24px;
+}
+
+.upload-box {
+    margin-bottom: 20px;
+}
+
+.custom-file-upload {
+    display: inline-block;
+    padding: 12px 24px;
+    cursor: pointer;
+    background-color: white;
+    color: #151d58;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.custom-file-upload input[type="file"] {
+    display: none;
+}
+
+/* Button styles */
+button {
+    background-color: white;
+    border: none;
+    color: #151d58;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #d1c8be;
+}
+
+/* Right box styles */
+.right-box {
+    background-color: #000323; /* New color for the right box */
+    padding: 30px;
+    border-radius: 10px;
+    margin: 10px;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-width: 300px;
+}
+
+/* Image container styles */
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.image-container img {
+    max-width: 45%; /* Adjust this value to fit your layout needs */
+    height: auto;
+    border: 2px solid #151d58; /* Dark blue border */
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.image-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 45%; /* Adjust this value to fit your layout needs */
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 10px; /* Adjust padding to make the footer smaller */
+    color: white;
+    background: none; /* Remove background color */
+}

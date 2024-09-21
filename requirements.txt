@@ -1,0 +1,6 @@
+Flask==2.3.2
+torch==2.0.1
+torchvision==0.15.2
+opencv-python  # Adjust as needed
+numpy==1.23.5
+ultralytics
