@@ -1,5 +1,4 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+
 *.python linguist-detectable=true
 *.csharp linguist-detectable=false
 *.java linguist-detectable=false 
